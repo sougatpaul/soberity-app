@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".anv"
+    android:background="#000000">
+
+
+    <Button
+        android:id="@+id/btn_audio"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:padding="15dp"
+        android:text="Audio"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:padding="15dp"
+        android:text="Video"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_audio"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="189dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_audio"
+        app:layout_constraintEnd_toEndOf="@+id/btn_audio"
+        app:layout_constraintStart_toStartOf="@+id/btn_audio"
+        app:layout_constraintTop_toTopOf="@+id/btn_audio"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="189dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_video"
+        app:layout_constraintEnd_toEndOf="@+id/btn_video"
+        app:layout_constraintStart_toStartOf="@+id/btn_video"
+        app:layout_constraintTop_toTopOf="@+id/btn_video"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v 0.1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

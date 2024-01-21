@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Avoid relapse Stay Sober"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp">
+        <activity
+            android:name=".Select"
+            android:exported="true" />
+        <activity
+            android:name=".Sobriety_tracker"
+            android:exported="true" />
+        <activity
+            android:name=".Risk_tracker"
+            android:exported="true" />
+        <activity
+            android:name=".Activity_sdm"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneHospital"
+            android:exported="true" />
+        <activity
+            android:name=".Phone_hospital2"
+            android:exported="true" />
+        <activity android:name=".DistrictActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".HospitalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Avg_quantity"
+            android:exported="true" />
+            <activity
+                android:name=".AtmavalokanaTalks"
+                android:exported="true" />
+            <activity
+                android:name=".PrayerTalks"
+                android:exported="true" />
+        <activity
+                android:name=".Avoidance_select"
+                android:exported="true" />
+        <activity android:name=".Avoidance_select2"
+                android:exported="true"/>
+        <activity android:name=".Bhajan1"
+                android:exported="true"/>
+        <activity android:name=".AtmavalokanaTalks1"
+                android:exported="true"/>
+        <activity android:name=".PrayerTalks1"
+                android:exported="true"/>
+        <activity android:name=".Bajan"
+            android:exported="true"/>
+        <activity android:name=".Motiv"
+            android:exported="true"/>
+        <activity android:name=".anv"
+            android:exported="true"/>
+        <activity android:name=".Blist"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

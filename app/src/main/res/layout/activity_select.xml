@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".Select">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_risk"
+        app:layout_constraintEnd_toEndOf="@+id/btn_risk"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/btn_risk"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_trigger"
+        android:layout_width="202dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Relapse Trigger Avoidance"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sober"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_help"
+        app:layout_constraintEnd_toEndOf="@+id/btn_help"
+        app:layout_constraintTop_toTopOf="@+id/btn_help"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_risk"
+        android:layout_width="193dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/roboto_dark"
+        android:text="Risk Tracker"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_sober"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sober"
+        app:layout_constraintStart_toStartOf="@+id/btn_sober"
+        app:layout_constraintTop_toTopOf="@+id/btn_sober"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_sober"
+        android:layout_width="202dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/roboto_dark"
+        android:text="Sobriety Tracker"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_help"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_rectangle_grad"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_trigger"
+        app:layout_constraintEnd_toEndOf="@+id/btn_trigger"
+        app:layout_constraintStart_toStartOf="@+id/btn_trigger"
+        app:layout_constraintTop_toTopOf="@+id/btn_trigger"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="340dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/roboto_dark"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Helpline"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_risk"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v 0.1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

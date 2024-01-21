@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".Avoidance_select"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_prayer"
+        app:layout_constraintEnd_toEndOf="@+id/btn_prayer"
+        app:layout_constraintStart_toStartOf="@+id/btn_prayer"
+        app:layout_constraintTop_toTopOf="@+id/btn_prayer"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_bajan"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:padding="15dp"
+        android:text="bajans"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prayer"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_bajan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_bajan"
+        app:layout_constraintStart_toStartOf="@+id/btn_bajan"
+        app:layout_constraintTop_toTopOf="@+id/btn_bajan"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/btn_atma"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:text="prayer talks"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_motiv"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_motiv"
+        app:layout_constraintTop_toTopOf="@+id/btn_motiv"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/btn_motiv"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:text="motivational audio clips"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bajan"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_atma"
+        app:layout_constraintEnd_toEndOf="@+id/btn_atma"
+        app:layout_constraintStart_toStartOf="@+id/btn_atma"
+        app:layout_constraintTop_toTopOf="@+id/btn_atma"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_prayer"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:padding="15dp"
+        android:text="Atmavalkana talks"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v 0.1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

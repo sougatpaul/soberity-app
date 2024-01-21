@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital Name"
+        android:textSize="36dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/hospital_name"
+        android:textColor="#05c"
+        />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hospital_name"
+        android:padding="10dp"
+        android:text="Address "
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:layout_below="@+id/address"
+        android:padding="10dp"
+        android:id="@+id/phone"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/phone"
+        android:id="@+id/callBtn"
+    />
+</RelativeLayout>

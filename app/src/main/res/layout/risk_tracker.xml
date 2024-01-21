@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Risk_tracker">
+
+    <!--  -->
+
+    <!-- android:hint="Enter Avg Quantity (per day in mL)\nದಿನಕ್ಕೆ ಸರಾಸರಿ ಪ್ರಮಾಣ ಮಿಲಿ" -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edit_text_border"
+
+        android:fontFamily="@font/roboto_dark"
+        android:gravity="center_horizontal"
+        app:backgroundTint="@color/white"
+        android:hint="Alcohol Type"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edit_text_border"
+        android:fontFamily="@font/roboto_dark"
+        android:gravity="center_horizontal"
+        app:backgroundTint="@color/white"
+        android:hint="Gender"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button9"
+        app:layout_constraintTop_toTopOf="@+id/button9"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_rectangle_grad"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_rectangle_grad"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_history"
+        app:layout_constraintEnd_toEndOf="@+id/btn_history"
+        app:layout_constraintStart_toStartOf="@+id/btn_history"
+        app:layout_constraintTop_toTopOf="@+id/btn_history"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginRight="52dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="212dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:onClick="risk_calculation"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edit_text_border"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#A8A8A8"
+        android:textCursorDrawable="@drawable/cusrsor"
+        android:textSize="16sp"
+        app:backgroundTint="#0000cc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.452"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="408dp"
+        android:layout_height="57dp"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="5"
+        tools:layout_constraintRight_creator="5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#EC0606"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <!-- ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ: ಎಸ್‌ಡಿಎಂ ಡಿ-ಅಡಿಕ್ಷನ್ ಮತ್ತು ಸಂಶೋಧನಾ ಕೇಂದ್ರ C/O ಎಸ್‌ಡಿಎಂ ಡಿ-ಅಡಿಕ್ಷನ್ ಮತ್ತು ಸಂಶೋಧನಾ ಕೇಂದ್ರ ಜಾಗೃತಿಸೌಡ, ಟಿಬಿ ಆಸ್ಪತ್ರೆ ಕ್ಯಾಂಪಸ್, ಲೈಲಾ, ಉಜೈರ್- 574240; ದೂರವಾಣಿ : 08256-232133 ಇ ಮೇಲ್ : deaddictionresearchcentre@gmail.com -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#041DA5"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText24" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <Button
+        android:id="@+id/btn_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find History"
+        android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/roboto_dark"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText24"
+        app:layout_constraintVertical_bias="0.364" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

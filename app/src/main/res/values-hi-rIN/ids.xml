@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spinner_destination" type="id" />
+    <item name="text_person" type="id" />
+    <item name="Bcall" type="id" />
+    <item name="text_person2" type="id" />
+    <item name="text_result" type="id" />
+    <item name="text_result2" type="id" />
+    <item name="Btcall" type="id" />
+</resources>

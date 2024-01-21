@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Avoid Relapse Stay sober</string>
+    <string name="selectedlanguage">English</string>
+    <string name="language">Hello World</string>
+    <string name="choose_district" translatable="false" />
+    <string name="contact_details" translatable="false" />
+    <string name="Person" translatable="false" />
+    <string name="call" translatable="false" />
+    <string name="result" translatable="false" />
+</resources>
